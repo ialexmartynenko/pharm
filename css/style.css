@@ -1,0 +1,2112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: PoiretOne-Regular;
+
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
+h2{
+    color: #080808;
+
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.content{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+
+/*  H E A D E R  */  /*  H E A D E R  */
+/*  H E A D E R  */  /*  H E A D E R  */
+/*  H E A D E R  */  /*  H E A D E R  */
+
+header{
+    width: auto;
+    padding-bottom: 70px;
+
+    border-top: 9px solid #f4f4f4;
+}
+
+header .content{
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+header .topheader{
+    position: relative;
+
+    width: 100%;
+}
+
+header .topheader .content .enter{
+    margin-top: 10px;
+
+    color: #030303;
+
+    float: right;
+
+    cursor: pointer;
+}
+
+.mobi-menu{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #f9dbde;
+}
+
+.mobi-menu .fa{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    color: #030303;
+
+    cursor: pointer;
+
+    font-size: 30px;
+}
+
+.mobi-menu ul li a{
+    color: #030303;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.mobi-menu ul li:first-child{
+    position: relative;
+
+    height: 25px;
+}
+
+.mobi-menu ul li a .fa{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    color: #030303;
+
+    cursor: pointer;
+    transform: translate(-50%, -10px);
+
+    font-size: 20px;
+}
+
+.mobi-menu ul li{
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.mobi-menu ul{
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+
+    transform: translate(0, -50%);
+}
+
+.mobi-menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+.mobi-menu.active{
+    display: block;
+}
+
+.mobi-menu{
+    display: none;
+}
+
+header .topheader .content .search{
+    padding: 145px 0 25px 0;
+}
+
+header .topheader .content .search a{
+    color: white;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+header .topheader .content .logo{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+
+    padding: 5px 10px;
+
+    background: white;
+
+    transform: translate(-50%, 0);
+}
+
+header .topheader .content .search form{
+    position: relative;
+    left: 50%;
+
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+
+    border-bottom: 1px solid #fcedee;
+
+    transform: translate(-50%, 0);;
+}
+
+header .topheader .content .search input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+header .topheader .content .search form .fa:before{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    color: #000;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+header .topheader .content .search input[type='submit']{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: none;
+    background: transparent;
+
+    text-indent: -99999999px;
+}
+
+header .topheader .content .search input[type='search']{
+    width: 100%;
+    padding-left: 15%;
+}
+
+header .topheader .content .order{
+    padding: 0 0 20px 0;
+}
+
+header .topheader .content .order .phone{
+    padding-right: 5px;
+
+    color: #040404;
+
+    font-family: PoiretOne-Regular;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header .topheader .content .order .click{
+    padding: 4px 5px;
+
+    opacity: .75;
+    color: #5a5a5a;
+    border: 2px solid #fbfbfb;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header .topheader .content .order ul{
+    position: relative;
+
+    margin-top: 15px;
+}
+
+header .topheader .content .order ul:before{
+    position: absolute;
+    top: 3px;
+    left: 50%;
+
+    padding: 10px;
+
+    border-left: 1px solid #fbfbfb;
+
+    content: '';
+}
+
+header .topheader .content .order ul li{
+    padding: 3px 10px;
+
+    display: inline-block;
+}
+
+header .topheader .content .order ul li a{
+    padding: 5px 10px;
+
+    color: #040404;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header .topheader .content .order ul li a:hover{
+    opacity: .46;
+    background-color: #fffcfc;
+}
+
+header .menu{
+    width: auto;
+    padding: 20px 0;
+
+    background-color: rgba(249,219,222,.5);
+}
+
+header .menu:after{
+    display: table;
+    clear: both;
+
+    content: ' ';
+}
+
+
+header .menu .content{
+    width: 100%;
+}
+
+header .menu .content .half-menu{
+    width: 50%;
+
+    float: left;
+}
+
+header .menu .content .half-menu ul{
+    list-style: none;
+
+    display: inline-block;
+}
+
+header .menu .content .half-menu ul > li{
+    position: relative;
+
+    padding-bottom: 0;
+}
+
+header .menu .content .half-menu ul > li a{
+    padding-bottom: 25px;
+}
+
+header .menu .content .half-menu ul li{
+    position: relative;
+
+    color: #060606;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header .menu .content .half-menu ul li ul{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+
+    width: 155px;
+    padding: 5px 10px 25px 10px;
+
+    background: white;
+
+    display: none;
+
+    transform: translate(-50%, 0);
+}
+
+header .menu .content .half-menu ul li ul:before{
+    position: absolute;
+    top: -13px;
+    left: 50%;
+
+    width: 15px;
+    height: 15px;
+
+    background: url(../img/triangle.png) no-repeat;
+
+    content: '';
+    transform: translate(-50%, 0);
+}
+
+header .menu .content .half-menu ul li ul li{
+    text-align: left;
+}
+
+header .menu .content .half-menu a{
+    color: #060606;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header .menu .content .half-menu ul li ul li:first-child{
+    padding: 5px 0;
+
+    border-bottom: 1px solid #91bd1b;
+}
+
+header .menu .content .half-menu ul li:hover ul{
+    border: 1px solid #a0a0a0;
+    background-color: white;
+
+    display: block;
+}
+
+header .menu .content .desc-menu{
+    display: none;
+}
+
+header .menu .content .basket{
+    position: relative;
+
+    width: 50%;
+
+    float: left;
+}
+
+header .menu .content .basket span{
+    position: absolute;
+    top: -15px;
+
+    color: #365a0c;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header .menu .content .basket .fa-shopping-basket:before{
+    position: absolute;
+    top: 12px;
+
+    width: 25px;
+    height: 25px;
+
+    color: #5a5a5a;
+
+    cursor: pointer;
+    transform: translate(-38%, -10px);
+
+    font-size: 20px;
+}
+
+/*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+/*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+/*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+
+
+
+
+/*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+/*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+/*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+
+.advantage{
+    width: auto;
+}
+
+.advantage .content{
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+.advantage .content .quality,
+.advantage .content .delivery,
+.advantage .content .consultation,
+.advantage .content .sale{
+    margin-bottom: 15px;
+}
+
+.advantage .content .quality p,
+.advantage .content .delivery p,
+.advantage .content .consultation p,
+.advantage .content .sale p{
+    color: #0b0a0a;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.advantage .content .quality span,
+.advantage .content .delivery span,
+.advantage .content .consultation span,
+.advantage .content .sale span{
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+}
+
+.advantage .content .quality img{
+    width: 30px;
+    height: 50px;
+}
+
+.advantage .content .delivery img{
+    width: 50px;
+    height: 35px;
+}
+
+.advantage .content .consultation img{
+    width: 30px;
+    height: 50px;
+}
+
+.advantage .content .sale img{
+    width: 40px;
+    height: 50px;
+}
+
+/*  E N D  S E C T I O N   A D V A N T A G E */
+/*  E N D  S E C T I O N   A D V A N T A G E */
+/*  E N D  S E C T I O N   A D V A N T A G E */
+
+
+
+
+/*  S E C T I O N   P R O D U C T */
+/*  S E C T I O N   P R O D U C T */
+/*  S E C T I O N   P R O D U C T */
+
+.product{
+    width: auto;
+}
+
+.product .content{
+    width: 100%;
+    padding-bottom: 10px;
+
+    overflow: hidden;
+}
+
+.product .content h2{
+    border-bottom: 3px solid #788c0f;
+}
+
+.product .content .smallbox{
+    padding-top: 20px;
+}
+
+.product .content .smallbox_first,
+.product .content .smallbox_second{
+    position: relative;
+
+    height: 100%;
+    margin-bottom: 5px;
+
+    border: 2px solid #999;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.product .content .smallbox_first .pic_1,
+.product .content .smallbox_second .pic_2{
+    width: 45%;
+    height: 100%;
+
+    border-right: 2px solid #999;
+
+    float: left;
+    overflow: hidden;
+}
+
+.product .content .smallbox_first .pic_1 img{
+    width: 60px;
+    height: 115px;
+}
+
+.product .content .smallbox_second .pic_2 img{
+    width: 80px;
+    height: 120px;
+}
+
+.product .content .smallbox_first .text,
+.product .content .smallbox_second .text{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+
+    box-sizing: border-box;
+    width: 55%;
+    padding: 5px;
+
+    float: right;
+
+    transform: translate(0, -50%);
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+}
+
+.product .content .smallbox_first .text .price,
+.product .content .smallbox_second .text .price,
+.product .content .bigbox .text .price{
+    padding-bottom: 0;
+
+    color: #666;
+
+    font-family: PoiretOne-Regular;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.product .content .smallbox_first .text p,
+.product .content .smallbox_second .text p,
+.product .content .bigbox .text p{
+    color: #693;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.product .content .smallbox_first .text a,
+.product .content .smallbox_second .text a,
+.product .content .bigbox .text a{
+    padding: 2px 10px;
+
+    color: #676666;
+    border: 1px solid #949494;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.product .content .bigbox{
+    position: relative;
+
+    height: 100%;
+    margin-bottom: 10px;
+
+    border: 2px solid #999;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.product .content .bigbox .pic_3{
+    width: 45%;
+    height: 100%;
+
+    border-right: 2px solid #999;
+
+    float: left;
+    overflow: hidden;
+}
+
+.product .content .bigbox .pic_3 img{
+    width: 120px;
+    height: 180px;
+}
+
+.product .content .bigbox .text{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+
+    box-sizing: border-box;
+    width: 55%;
+    padding: 5px;
+
+    float: right;
+
+    transform: translate(0, -50%);
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+}
+
+.product .content .bigbox .text span{
+    color: red;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product .content .big .text p{
+    padding-bottom: 25px;
+}
+
+.product .content .all_product{
+    color: #080808;
+    border-bottom: 1px solid #5a5a5a;
+
+    float: right;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+/*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+/*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+
+
+
+
+/*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+/*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+/*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+
+.blog{
+    width: auto;
+    padding-bottom: 50px;
+}
+
+.blog .content h2{
+    margin-bottom: 20px;
+
+    border-bottom: 3px solid #788c0f;
+}
+
+.blog .content .carusel h3{
+    margin-bottom: 20px;
+
+    color: #080808;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.blog .content .slick-slider .slick-arrow,
+.blog .content .carusel .slick-dots{
+    display: none !important;
+}
+
+.blog .content .carusel img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.blog .content .carusel .day{
+    margin-bottom: 5px;
+
+    color: #080808;
+    border-bottom: 2px solid #5a5a5a;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.blog .content .carusel p{
+    margin-bottom: 15px;
+
+    color: #080808;
+
+    font-family: PoiretOne-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog .content .carusel a{
+    color: #080808;
+
+    float: right;
+
+    font-family: PoiretOne-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+/*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+/*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+
+
+
+
+/*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+/*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+/*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+
+.reviews{
+    position: relative;
+
+    width: auto;
+    margin-bottom: 30px;
+
+    background-color: rgba(154,202,104,.3);
+}
+
+.reviews .content h2{
+    position: absolute;
+    top: -15px;
+
+    border-bottom: 3px solid #788c0f;
+}
+
+.reviews .content .slidertwo .slick-arrow,
+.reviews .content .slidertwo .slick-dots{
+    display: none !important;
+}
+
+.reviews .content .slidertwo img{
+    width: 25%;
+    padding: 25px 0;
+
+    float: left;
+}
+
+.reviews .content .slidertwo p{
+    box-sizing: border-box;
+    width: 75%;
+    padding: 25px 25px;
+
+    color: #080808;
+
+    float: left;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.reviews .content .slidertwo a{
+    margin-bottom: 30px;
+
+    color: #080808;
+    border-bottom: 1px solid #91bd1b;
+
+    float: right;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+/*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+/*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+
+
+
+
+/*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+/*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+/*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+
+.loyalty{
+    position: relative;
+
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.loyalty .background{
+    width: 100%;
+    height: 150px;
+}
+
+.loyalty .txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 15px 20px;
+
+    background-color: white;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loyalty .txt p{
+    color: #070707;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.loyalty .txt span{
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.loyalty .txt .sale{
+    padding-bottom: 12px;
+
+    color: #7f921c;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.loyalty .txt a{
+    padding: 2px 4px;
+
+    color: #050505;
+    border: 2px solid #3b3b3b;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+/*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+/*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+
+
+
+
+/*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+/*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+/*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+
+.seo{
+    position: relative;
+
+    width: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    background-color: #f6f6f9;
+}
+
+.seo:after{
+    display: table;
+    clear: both;
+    /*что б было видно всплывающие меню!!!!!!!!!*/
+
+    content: ' ';
+}
+
+.seo .content h2{
+    position: absolute;
+    top: -15px;
+
+    border-bottom: 3px solid #788c0f;
+}
+
+.seo .content p{
+    padding-top: 50px;
+
+    color: #080808;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.seo .content a{
+    padding-top: 20px;
+
+    color: #080808;
+
+    float: right;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+/* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+/* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+/* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+
+
+
+
+/*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+/*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+/*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+
+.contact{
+    width: auto;
+}
+
+.contact .content{
+    padding-bottom: 15px;
+
+    text-align: center;
+}
+
+.contact ul li{
+    padding: 0 0 10px 25px;
+
+    list-style-type: none;
+}
+
+.contact ul li a{
+    position: relative;
+
+    color: #666;
+
+    text-decoration: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.contact ul li .fa-envelope-o:before{
+    position: absolute;
+    top: -3px;
+    left: -30px;
+
+    width: 30px;
+    height: 20px;
+
+    color: #788c0f;
+
+    font-size: 15px;
+}
+
+.contact ul li .fa-phone:before{
+    position: absolute;
+    top: -3px;
+    left: -25px;
+
+    width: 30px;
+    height: 20px;
+
+    color: #788c0f;
+
+    font-size: 20px;
+}
+
+.contact ul li .button{
+    padding: 3px 6px;
+
+    border: 2px solid #5a5a5a;
+}
+
+/* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+/* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+/* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+
+
+
+
+/*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+/*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+/*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+
+.footer{
+    width: auto;
+
+    background-color: #585555;
+}
+
+.footer .content{
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.footer .content h3{
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    color: white;
+
+    font-family: PoiretOne-Regular;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer .content ul li{
+    padding-bottom: 5px;
+
+    color: white;
+
+    list-style-type: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.footer .content .our ul li{
+    padding-right: 5px;
+
+    display: inline;
+}
+
+.footer .content .our ul li a{
+    text-decoration: none;
+}
+
+.footer .content .our ul li .fa-facebook:before{
+    width: 20px;
+    height: 20px;
+    padding-right: 9px;
+
+    color: #585555;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: 20px;
+}
+
+.footer .content .our ul li .fa-vk:before{
+    width: 20px;
+    height: 20px;
+
+    color: #585555;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: 19px;
+}
+
+.footer .content .our ul li .fa-google-plus:before{
+    width: 20px;
+    height: 20px;
+
+    color: #585555;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: 18px;
+}
+
+/*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+/*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+/*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+
+
+
+/*   S E C T I O N  D E V E L O P  */ /*   S E C T I O N  D E V E L O P  */
+/*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+/*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+
+.develop{
+    width: auto;
+
+    background-color: #3b3b3b;
+}
+
+.develop .content{
+    width: 100%;
+    padding: 10px 0 10px 0;
+
+    text-align: center;
+}
+
+.develop .content p{
+    color: white;
+
+    text-transform: uppercase;
+
+    font-family: PoiretOne-Regular;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.develop .content span{
+    text-transform: none;
+
+    font-family: PoiretOne-Regular;
+    font-size: 12px;
+}
+
+/*  E N D   D E V E L O P  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+/*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+/*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+
+
+
+@media screen and (min-width: 641px){
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+
+    /*  H E A D E R  */  /*  H E A D E R  */
+    /*  H E A D E R  */  /*  H E A D E R  */
+    /*  H E A D E R  */  /*  H E A D E R  */
+
+    header{
+        padding-bottom: 120px;
+    }
+
+    header .topheader .content .order .phone{
+        font-size: 18px;
+    }
+
+    header .topheader .content .order .click{
+        font-size: 14px;
+    }
+
+    header .topheader .content .order ul li a{
+        font-size: 14px;
+    }
+
+    header .menu .content .basket span{
+        font-size: 14px;
+    }
+
+    header .menu .content .half-menu a{
+        font-size: 14px;
+    }
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+
+
+
+
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+
+    .advantage .content{
+        padding: 50px 0 35px 0;
+
+        overflow: hidden;
+    }
+
+    .advantage .content .quality,
+    .advantage .content .delivery,
+    .advantage .content .consultation,
+    .advantage .content .sale{
+        width: 25%;
+        margin-bottom: 15px;
+
+        float: left;
+    }
+
+    .advantage .content .quality p,
+    .advantage .content .delivery p,
+    .advantage .content .consultation p,
+    .advantage .content .sale p{
+        font-size: 16px;
+    }
+
+    .advantage .content .quality img{
+        width: 55px;
+        height: 90px;
+    }
+
+    .advantage .content .delivery img{
+        width: 85px;
+        height: 55px;
+        padding: 16px;
+    }
+
+    .advantage .content .consultation img{
+        width: 55px;
+        height: 70px;
+        padding: 8px;
+    }
+
+    .advantage .content .sale img{
+        width: 65px;
+        height: 75px;
+        padding: 7px 0;
+    }
+
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+
+
+
+
+    /*  S E C T I O N   P R O D U C T */
+    /*  S E C T I O N   P R O D U C T */
+    /*  S E C T I O N   P R O D U C T */
+
+    .product .content{
+        width: 100%;
+        padding-bottom: 10px;
+
+        overflow: hidden;
+    }
+
+    .product .content h2{
+        border-bottom: 4px solid #788c0f;
+    }
+
+    .product .content .smallbox{
+        padding-top: 20px;
+    }
+
+    .product .content .smallbox{
+        width: 39%;
+
+        float: left;
+    }
+
+    .product .content .bigbox{
+        width: 59%;
+
+        float: left;
+    }
+
+    .product .content .bigbox{
+        box-sizing: border-box;
+        margin: 20px 0 0 10px;
+    }
+
+    .product .content .smallbox_first .pic_1 img{
+        width: 80px;
+        height: 135px;
+    }
+
+    .product .content .smallbox_second .pic_2 img{
+        width: 90px;
+        height: 140px;
+    }
+
+    .product .content .bigbox .pic_3 img{
+        width: 130px;
+        height: 208px;
+        padding: 40px 0;
+    }
+
+    .product .content .all_product{
+        padding-top: 15px;
+    }
+
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+
+
+
+
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+
+    .blog .content .carusel div{
+        margin: 0 8px;
+    }
+
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+
+
+
+
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+
+    .reviews .content .slidertwo .slick-dots{
+        display: block !important;
+    }
+
+    .reviews .content .slidertwo .slick-dots{
+        position: absolute;
+        bottom: 5px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .reviews .content .slidertwo .slick-dots li{
+        width: 8px;
+        height: 8px;
+        margin: 10px;
+
+        border: 2px solid #788c0f;
+        border-radius: 50%;
+        background-color: white;
+
+        display: inline-block;
+
+        text-indent: -999999px;
+    }
+
+    .reviews .content .slidertwo .slick-dots .slick-active{
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+
+        border-radius: 50%;
+        background-color: #788c0f;
+
+        text-indent: -999999px;
+    }
+
+    .reviews .content .slidertwo p{
+        font-size: 20px;
+    }
+
+    .reviews .content .slidertwo span{
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .reviews .content .slidertwo a{
+        font-size: 15px;
+    }
+
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+
+
+
+
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+
+    .loyalty{
+        overflow: hidden;
+    }
+
+    .loyalty .background{
+        width: 50%;
+        height: 250px;
+
+        float: left;
+        overflow: hidden;
+    }
+
+    .loyalty .txt{
+        padding: 15px 25px;
+    }
+
+    .loyalty .txt p{
+        font-size: 22px;
+    }
+
+    .loyalty .txt span{
+        font-size: 14px;
+    }
+
+    .loyalty .txt .sale{
+        padding-bottom: 15px;
+    }
+
+    .loyalty .txt a{
+        padding: 3px 6px;
+    }
+
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+
+
+
+
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+
+    .seo .content p{
+        padding-top: 70px;
+
+        font-size: 15px;
+    }
+
+    .seo .content a{
+        font-size: 15px;
+    }
+
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+
+
+
+
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+
+    .contact .content{
+        padding-bottom: 15px;
+
+        text-align: left;
+    }
+
+    .contact ul li{
+        display: inline-block;
+    }
+
+    .contact ul li a{
+        padding-right: 20px;
+
+        font-size: 15px;
+    }
+
+    .contact ul li .fa-envelope-o:before{
+        top: -2px;
+
+        font-size: 20px;
+    }
+
+    .contact ul li .fa-phone:before{
+        top: -3px;
+
+        font-size: 25px;
+    }
+
+
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+
+
+
+
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+
+    .footer .content{
+        overflow: hidden;
+    }
+
+    .footer .content .information,
+    .footer .content .clients,
+    .footer .content .our{
+        width: 33.3%;
+
+        float: left;
+    }
+
+    .footer .content h3{
+        font-size: 20px;
+    }
+
+    .footer .content ul li{
+        font-size: 15px;
+    }
+
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+
+
+
+
+    /*   S E C T I O N  D E V E L O P  */ /*   S E C T I O N  D E V E L O P  */
+    /*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+    /*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+
+    .develop .content p{
+        font-size: 16px;
+    }
+
+    .develop .content span{
+        font-size: 20px;
+    }
+
+
+    /*  E N D   D E V E L O P  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+    /*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+    /*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+}
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    h2{
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    header .topheader .content,
+    header .menu .content,
+    .advantage .content,
+    .product .content,
+    .blog .content,
+    .reviews .content,
+    .seo .content,
+    .contact .content,
+    .footer .content,
+    .develop .content{
+        width: 1140px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    /*  H E A D E R  */  /*  H E A D E R  */
+    /*  H E A D E R  */  /*  H E A D E R  */
+    /*  H E A D E R  */  /*  H E A D E R  */
+
+    header{
+        margin-bottom: 30px;
+        padding-bottom: 415px;
+    }
+
+    header .topheader .content{
+        position: relative;
+
+        padding-top: 120px;
+    }
+
+    .topheader .content .enter .fa-bars{
+        display: none;
+    }
+
+    header .topheader .content .search{
+        position: absolute;
+        top: 45px;
+        left: 0;
+
+        padding: 0;
+
+        text-align: left;
+    }
+
+    header .topheader .content .search a{
+        font-size: 24px;
+    }
+
+    header .topheader .content .order{
+        position: absolute;
+        top: 40px;
+        right: 0;
+
+        padding: 0;
+
+        text-align: right;
+    }
+
+    header .topheader .content .order .phone{
+        font-size: 24px;
+    }
+
+    header .topheader .content .order .click{
+        padding: 5px 8px;
+
+        font-size: 18px;
+    }
+
+    header .topheader .content .order ul{
+        margin-top: 20px;
+    }
+
+    header .topheader .content .order ul:before{
+        top: -2px;
+        left: 81%;
+
+        padding: 15px;
+    }
+
+    header .topheader .content .order ul li a{
+        font-size: 14px;
+    }
+
+    header .menu{
+        padding: 15px 0 4px 0;
+    }
+
+    header .menu .content .half-menu{
+        width: 22%;
+        padding-left: 50px;
+
+        text-align: left;
+    }
+
+    header .menu .content .half-menu ul li ul{
+        width: 255px;
+        margin-top: 25px;
+        padding: 5px 10px 35px 10px;
+    }
+
+    header .menu .content .half-menu a{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    header .menu .content .desc-menu{
+        width: 62%;
+
+        display: block;
+        float: left;
+    }
+
+    header .menu .content .desc-menu ul li{
+        display: inline;
+    }
+
+    header .menu .content .desc-menu ul li a{
+        padding: 0 25px;
+
+        color: #030303;
+
+        text-decoration: none;
+
+        font-family: PoiretOne-Regular;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    header .menu .content .desc-menu ul li a .fa-home{
+        font-size: 25px;
+    }
+
+    header .menu .content .desc-menu ul li a:hover{
+        border-bottom: 1px solid #92c37c;
+    }
+
+    header .menu .content .basket{
+        top: 8px;
+
+        width: 16%;
+
+        float: right;
+    }
+
+    header .menu .content .basket span{
+        top: -41px;
+
+        font-size: 18px;
+    }
+
+    header .menu .content .basket .fa-shopping-basket:before{
+        top: -10px;
+
+        font-size: 25px;
+    }
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+    /*  E N D   H E A D E R  */  /*  E N D   H E A D E R  */
+
+
+
+
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+    /*  S E C T I O N   A D V A N T A G E  */  /*  S E C T I O N   A D V A N T A G E  */
+
+    .advantage .content .quality p,
+    .advantage .content .consultation p,
+    .advantage .content .man p,
+    .advantage .content .sale p{
+        font-size: 24px;
+    }
+
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+    /*  E N D  S E C T I O N   A D V A N T A G E */
+
+
+
+
+    /*  S E C T I O N   P R O D U C T */
+    /*  S E C T I O N   P R O D U C T */
+    /*  S E C T I O N   P R O D U C T */
+
+    .product .content h2{
+        border-bottom: 4px solid #788c0f;
+    }
+
+    .product .content .smallbox{
+        padding-top: 20px;
+    }
+
+    .product .content .smallbox{
+        width: 39%;
+
+        float: left;
+    }
+    .product .content .bigbox{
+        width: 59%;
+
+        float: left;
+    }
+
+    .product .content .bigbox{
+        box-sizing: border-box;
+        margin: 20px 0 0 10px;
+    }
+
+    .product .content .smallbox_first .pic_1 img{
+        width: 122px;
+        height: 226px;
+    }
+
+    .product .content .smallbox_second .pic_2 img{
+        width: 156px;
+        height: 224px;
+    }
+
+    .product .content .bigbox .pic_3 img{
+        width: 241px;
+        height: 362px;
+        padding: 50px 0;
+    }
+
+    .product .content .smallbox_first .text .price,
+    .product .content .smallbox_second .text .price,
+    .product .content .bigbox .text .price{
+        font-size: 16px;
+    }
+
+    .product .content .smallbox_first .text p,
+    .product .content .smallbox_second .text p,
+    .product .content .bigbox .text p{
+        padding-bottom: 15px;
+
+        font-size: 18px;
+    }
+
+    .product .content .smallbox_first .text a,
+    .product .content .smallbox_second .text a,
+    .product .content .bigbox .text a{
+        padding: 8px 35px;
+
+        font-size: 14px;
+    }
+
+    .product .content .bigbox .text span{
+        font-size: 24px;
+    }
+
+    .product .content .bigbox .text p{
+        padding-bottom: 130px;
+    }
+
+    .product .content .all_product{
+        font-size: 18px;
+    }
+
+
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+    /*  E N D  S E C T I O N   P R O D U C T */  /*  E N D  S E C T I O N   P R O D U C T */
+
+
+
+
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+    /*  S E C T I O N   B L O G  */  /*  S E C T I O N    B L O G  */
+
+    .blog .content .carusel h3{
+        font-size: 30px;
+    }
+
+    .blog .content .slick-slider .slick-arrow{
+        display: block !important;
+    }
+
+    .blog .content .slick-slider .slick-arrow{
+        position: absolute;
+        z-index: 5;
+        top: 25%;
+
+        border-radius: 50%;
+
+        text-indent: -9999999px;
+    }
+
+
+    .blog .content .slick-slider .slick-next{
+        right: -75px;
+
+        width: 69px;
+        height: 69px;
+
+        background: url(../img/arrow-next.png) no-repeat 50% 50%;
+    }
+
+    .blog .content .slick-slider .slick-prev{
+        left: -60px;
+
+        width: 69px;
+        height: 69px;
+
+        background: url(../img/arrow-next.png) no-repeat 50% 50%;
+
+        transform: rotate(180deg);
+    }
+
+    .blog .content .carusel img{
+        height: 236px;
+    }
+
+    .blog .content .carusel .day{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .blog .content .carusel p{
+        font-size: 18px;
+    }
+
+    .blog .content .carusel a{
+        font-size: 24px;
+    }
+
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+    /*  E N D   S E C T I O N   B L O G  */  /*  E N D   S E C T I O N    B L O G  */
+
+
+
+
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+    /*    S E C T I O N   R E V I E W S  */  /*    S E C T I O N    R E V I E W S  */
+
+    .reviews{
+        margin: 70px 0 60px 0;
+    }
+
+    .reviews .content h2{
+        top: -30px;
+    }
+
+    .reviews .content .slidertwo img{
+        padding: 65px 0 35px 0;
+    }
+
+    .reviews .content .slidertwo p{
+        padding: 65px 35px 20px 25px;
+
+        font-size: 20px;
+    }
+
+    .reviews .content .slidertwo span{
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .reviews .content .slidertwo a{
+        padding-top: 115px;
+
+        font-size: 18px;
+    }
+
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+    /*  E N D   S E C T I O N   R E V I E W S  */  /*  E N D   S E C T I O N    R E V I E W S  */
+
+
+
+
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+    /*    S E C T I O N   L O Y A L T Y  */  /*    S E C T I O N    L O Y A L T Y  */
+
+    .loyalty{
+        margin-bottom: 70px;
+    }
+
+    .loyalty .background{
+        height: 449px;
+    }
+
+    .loyalty .txt{
+        padding: 45px 80px 23px 80px;
+    }
+
+    .loyalty .txt p{
+        font-size: 50px;
+    }
+
+    .loyalty .txt span{
+        font-size: 32px;
+    }
+
+    .loyalty .txt .sale{
+        padding-bottom: 30px;
+
+        font-size: 50px;
+    }
+
+    .loyalty .txt a{
+        padding: 8px 18px;
+
+        font-size: 18px;
+    }
+
+
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+    /*  E N D   S E C T I O N   L O Y A L T Y  */  /*  E N D   S E C T I O N    L O Y A L T Y  */
+
+
+
+
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+    /*  S E C T I O N   S  E  O  */  /*  S E C T I O N    S  E  O  */
+
+    .seo .content h2{
+        top: -30px;
+    }
+
+    .seo .content p{
+        padding-top: 125px;
+
+        font-size: 22px;
+    }
+
+
+    .seo .content a{
+        font-size: 22px;
+    }
+
+
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+    /* E N D    S E C T I O N   S  E  O  */  /*  E N D   S E C T I O N    S  E  O  */
+
+
+
+
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+    /*     S E C T I O N   C O N T A C T  */  /*     S E C T I O N    C O N T A C T  */
+
+    .contact{
+        width: auto;
+    }
+
+    .contact .content{
+        padding-bottom: 15px;
+
+        text-align: left;
+    }
+
+    .contact ul li{
+        display: inline-block;
+    }
+
+    .contact ul li a{
+        padding: 0 40px 0 25px;
+
+        font-size: 24px;
+    }
+
+    .contact ul li .button{
+        font-size: 18px;
+    }
+
+    .contact ul li .fa-envelope-o:before{
+        font-size: 35px;
+    }
+
+    .contact ul li .fa-phone:before{
+        font-size: 45px;
+    }
+
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+    /* E N D    S E C T I O N   C O N T A C T  */  /*  E N D   S E C T I O N    C O N T A C T  */
+
+
+
+
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+    /*     S E C T I O N   F O O T E R  */  /*     S E C T I O N    F O O T E R  */
+
+    .footer .content{
+        padding-bottom: 40px;
+    }
+
+    .footer .content h3{
+        padding-top: 20px;
+
+        font-size: 30px;
+    }
+
+    .footer .content ul li{
+        font-size: 18px;
+    }
+
+
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+    /*  E N D   S E C T I O N   F O O T E R  */  /*  E N D   S E C T I O N    F O O T E R  */
+
+
+
+
+    /*   S E C T I O N  D E V E L O P  */ /*   S E C T I O N  D E V E L O P  */
+    /*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+    /*   S E C T I O N  D E V E L O P */  /*   S E C T I O N  D E V E L O P  */
+
+    .develop .content p{
+        padding: 20px 0;
+    }
+
+
+    /*  E N D   D E V E L O P  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+    /*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+    /*  E N D   S E C T I O N  D E V E L O P */  /*  E N D   S E C T I O N  D E V E L O P  */
+}
